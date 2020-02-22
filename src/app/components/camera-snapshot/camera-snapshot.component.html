@@ -1,0 +1,17 @@
+<!-- <div class="camera-snapshot" (click)="getCameraImage()">
+  <md-icon [class.small]="imageUrl">camera</md-icon>
+  <canvas width="500" height="380" #canvas hidden="true"></canvas>
+  <video width="500" height="380" autoplay #video></video>
+</div>  -->
+
+<div class="d-flex flex-column align-items-center">
+    <div class="p-1">
+        <video width="500" height="380" autoplay #video></video>
+    </div>
+    <div class="pb-2">
+       <button class="btn btn-primary" (click)="getCameraImage()">Capture Image</button>
+    </div>
+    <div class="p-1">
+        <canvas width="500" height="380" #canvas hidden="true"></canvas>
+    </div>
+ </div>
